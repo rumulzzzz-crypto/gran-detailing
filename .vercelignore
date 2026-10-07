@@ -1,0 +1,9 @@
+.git/
+.vercel/
+node_modules/
+.env
+.env.*
+server.mjs
+README.md
+PROGRESS.md
+assets/hero-original.png

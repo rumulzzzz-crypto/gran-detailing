@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Грань — концепт сайта детейлинг-студии. Дизайн и разработка Микаила Дадашова.">
+  <meta name="theme-color" content="#17191c">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Грань — уход в деталях">
+  <meta property="og:description" content="Авторский концепт детейлинг-студии. Дизайн и разработка Микаила Дадашова.">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Грань — уход в деталях</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/hero.webp" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-photo" src="assets/hero.webp" alt="Графитовый спортивный автомобиль в студии с мягким освещением" width="1659" height="948" fetchpriority="high">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <header class="header">
+        <a href="#main" class="brand" aria-label="Грань — в начало"><span class="brand-name">Грань</span><span class="brand-description">Студия детейлинга</span></a>
+        <nav aria-label="Основная навигация" class="desktop-nav"><a href="#services">Услуги</a><a href="#results">Результат</a><a href="#approach">Подход</a></nav>
+        <a href="#services" class="button button-outline header-cta">Выбрать услугу <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+        <nav id="mobile-menu" aria-label="Мобильная навигация" hidden><a href="#services">Выбрать услугу</a><a href="#results">До и после</a><a href="#approach">Наш подход</a><a href="#contact">Подготовить обращение</a></nav>
+      </header>
+      <div class="hero-copy">
+        <h1 id="hero-title">Безупречность<br>начинается<br>с деталей</h1>
+        <div class="gold-line" aria-hidden="true"></div>
+        <p>Полировка и защита<br>вашего автомобиля.</p>
+        <a class="button button-gold hero-cta" href="#services">Выбрать уход <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-bottom"><p>Внимание к каждой поверхности.<br>Красота в каждом отражении.</p><a class="scroll-link" href="#services">Наши услуги <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <section class="services section" id="services" aria-labelledby="services-title">
+      <div class="section-heading"><h2 id="services-title">Уход под ваш<br>автомобиль</h2><p>Подбираем состав работ под состояние кузова и салона. Начните с того, что важно для вас.</p></div>
+      <div class="care-finder" role="group" aria-labelledby="care-finder-title">
+        <p id="care-finder-title">Что хочется изменить?</p>
+        <div class="care-choices">
+          <button type="button" data-care="polish" aria-pressed="true" aria-controls="service-panel"><span>Вернуть блеск</span><small>Мелкие царапины и тусклый кузов</small></button>
+          <button type="button" data-care="protect" aria-pressed="false" aria-controls="service-panel"><span>Сохранить внешний вид</span><small>Уход и защита поверхности</small></button>
+          <button type="button" data-care="interior" aria-pressed="false" aria-controls="service-panel"><span>Освежить салон</span><small>Загрязнения и уход за материалами</small></button>
+        </div>
+        <p class="finder-note">Выберите задачу — ниже появится подходящее направление. Окончательный состав работ определяется после осмотра.</p>
+      </div>
+      <div class="service-tabs" role="tablist" aria-label="Направления ухода">
+        <button id="tab-polish" role="tab" aria-selected="true" aria-controls="service-panel" tabindex="0" data-service="polish">Полировка кузова</button>
+        <button id="tab-protect" role="tab" aria-selected="false" aria-controls="service-panel" tabindex="-1" data-service="protect">Защитное покрытие</button>
+        <button id="tab-interior" role="tab" aria-selected="false" aria-controls="service-panel" tabindex="-1" data-service="interior">Уход за салоном</button>
+      </div>
+      <div class="service-panel" id="service-panel" role="tabpanel" aria-labelledby="tab-polish">
+        <div class="service-copy"><h3 id="service-title">Полировка кузова</h3><p id="service-description">Работа с мелкими царапинами и следами эксплуатации. Возвращаем поверхности глубину цвета и выразительный блеск.</p><ul id="service-scope"><li>Осмотр состояния поверхности</li><li>Подбор состава работ</li><li>Полировка и проверка результата</li></ul><dl class="service-expectations"><dt>Когда рассмотреть</dt><dd id="service-fit">Если после мойки остаются мелкие царапины и тусклые отражения.</dd><dt>Что важно учесть</dt><dd id="service-limit">Глубокие повреждения и сколы могут потребовать ремонта. Возможности полировки зависят от состояния покрытия.</dd></dl><a id="service-cta" class="button button-gold" href="#contact">Выбрать эту услугу <span aria-hidden="true">↗</span></a><p class="service-note">Стоимость и срок — после осмотра.</p></div>
+        <div class="service-visual"><img id="service-image" src="assets/polish.webp" alt="Отражение студийного света на полированном кузове" width="1536" height="1024" loading="lazy" decoding="async"><span>Красота в каждом отражении</span></div>
+      </div>
+      <p id="service-image-status" class="service-image-status" role="status"></p>
+    </section>
+    <section class="estimate section" id="estimate" aria-labelledby="estimate-title">
+      <div class="estimate-intro"><h2 id="estimate-title">Сначала задача.<br>Затем стоимость.</h2><p>У одинаковых автомобилей может быть разное состояние. Поэтому состав ухода важнее универсального пакета.</p><a class="button button-outline" href="#contact">Описать свою задачу <span aria-hidden="true">↗</span></a></div>
+      <div class="estimate-details"><h3>Что влияет на оценку</h3><dl><dt>Автомобиль и материалы</dt><dd>Размер кузова, особенности отделки и поверхности, которым нужен уход.</dd><dt>Состояние сейчас</dt><dd>Глубина повреждений, характер загрязнений, прошлые ремонты и покрытия.</dd><dt>Согласованный результат</dt><dd>Локальная работа или комплексный уход. Состав, стоимость и срок обсуждаются до начала работ.</dd></dl><p class="estimate-note">Для первого обсуждения полезны модель автомобиля, описание задачи и фотографии при хорошем освещении. В этом концепте расчёт и запись не выполняются.</p></div>
+    </section>
+    <section class="results section" id="results" aria-labelledby="results-title">
+      <div class="section-heading"><h2 id="results-title">Разница —<br>в отражении</h2><p>Передвиньте границу, чтобы рассмотреть два состояния одной поверхности.</p></div>
+      <figure class="comparison" style="--split:50%">
+        <div class="comparison-images"><img src="assets/polish.webp" alt="Иллюстрация кузова после полировки" width="1536" height="1024" loading="lazy" decoding="async"><img class="comparison-before" src="assets/before.webp" alt="Иллюстрация того же кузова с мелкими царапинами" width="1536" height="1024" loading="lazy" decoding="async"></div>
+        <span class="comparison-label label-before" aria-hidden="true">До</span><span class="comparison-label label-after" aria-hidden="true">После</span>
+        <span class="comparison-handle" aria-hidden="true"><span>‹ ›</span></span>
+        <input id="comparison-slider" type="range" min="0" max="100" value="50" aria-label="Сравнение до и после: доля изображения до полировки" aria-describedby="comparison-help">
+      </figure>
+      <div class="comparison-caption"><p id="comparison-help">Мышью, касанием или стрелками клавиатуры.</p><p>Иллюстрация эффекта, созданная ИИ для концепта.</p></div>
+    </section>
+    <section class="approach section" id="approach" aria-labelledby="approach-title">
+      <div class="section-heading"><h2 id="approach-title">Сначала понять.<br>Потом довести до блеска.</h2><p>Прозрачный процесс: согласуем задачу, уделим внимание деталям и проверим результат.</p></div>
+      <ol class="process"><li><span class="step-number">01</span><h3>Осмотр и согласование</h3><p>Обсуждаем задачу, оцениваем состояние автомобиля и выбираем подходящий состав работ.</p></li><li><span class="step-number">02</span><h3>Работа с деталями</h3><p>Уделяем внимание каждой поверхности. Выполняем согласованный уход за кузовом или салоном.</p></li><li><span class="step-number">03</span><h3>Проверка результата</h3><p>Осматриваем автомобиль вместе и обсуждаем дальнейший уход.</p></li></ol>
+    </section>
+    <section class="faq section" id="questions" aria-labelledby="faq-title"><div class="faq-intro"><h2 id="faq-title">Перед тем,<br>как начать</h2><p>Ответы на первые вопросы.</p></div><div class="faq-list">
+      <details><summary>Как выбрать подходящую услугу?<span aria-hidden="true"></span></summary><p>Начните с того, что хотите изменить: состояние кузова, его защиту или чистоту салона. Окончательный состав работ лучше согласовать после осмотра.</p></details>
+      <details><summary>Чем полировка отличается от покрытия?<span aria-hidden="true"></span></summary><p>Это разные задачи: полировка направлена на внешний вид поверхности, покрытие — на её дальнейший уход и защиту. В нашем концепте направления можно выбрать по отдельности.</p></details>
+      <details><summary>От чего зависят стоимость и срок?<span aria-hidden="true"></span></summary><p>От состояния автомобиля и согласованного объёма работ. На этой демонстрационной странице нет фиксированного прайса действующей студии.</p></details>
+      <details><summary>Можно ли записаться через этот сайт?<span aria-hidden="true"></span></summary><p>Это авторский концепт, а не действующая студия. Форма ниже подготовит текст обращения для копирования. Она не отправляет данные и не оформляет запись.</p></details>
+    </div></section>
+    <section class="contact section" id="contact" aria-labelledby="contact-title"><div class="contact-intro"><h2 id="contact-title">Хороший уход<br>начинается<br>с разговора.</h2><p>Расскажите, какой автомобиль и какая услуга вас интересуют.</p><p class="demo-note">Демонстрационная форма.<br>Данные не отправляются и не сохраняются.</p></div>
+      <form id="request-form"><label for="client-name">Как к вам обращаться</label><input id="client-name" name="name" type="text" required maxlength="80" autocomplete="name" placeholder="Ваше имя">
+        <label for="car-model">Ваш автомобиль</label><input id="car-model" name="car" type="text" required maxlength="120" placeholder="Марка и модель">
+        <label for="request-service">Что вас интересует</label><select id="request-service" name="service"><option value="polish">Полировка кузова</option><option value="protect">Защитное покрытие</option><option value="interior">Уход за салоном</option><option value="advice">Помощь с выбором</option></select>
+        <label for="client-goal">Пожелания <span class="optional-label">— необязательно</span></label><textarea id="client-goal" name="goal" rows="3" maxlength="600" placeholder="Что хочется изменить? Есть ли прошлые покрытия или ремонт?"></textarea>
+        <button class="button button-gold request-button" type="submit">Подготовить обращение <span aria-hidden="true">↗</span></button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        <div id="request-result" hidden><label for="request-text">Текст обращения</label><textarea id="request-text" readonly rows="5"></textarea><button class="button button-outline" id="copy-request" type="button">Скопировать текст</button><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p></div>
+      </form>
+    </section>
+  </main>
+  <footer><div><span class="footer-brand">Грань</span><p>Авторский концепт детейлинг-студии.<br>Изображения созданы ИИ.</p></div><div><a href="https://mikail-portfolio-interactive.vercel.app/" target="_blank" rel="noopener noreferrer">Дизайн и разработка — Микаил Дадашов</a><a href="https://t.me/rumul" target="_blank" rel="noopener noreferrer">Обсудить создание похожего сайта ↗</a></div><a href="#main" class="back-top">Наверх ↑</a></footer>
+</body>
+</html>

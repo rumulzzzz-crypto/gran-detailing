@@ -1,0 +1,9 @@
+.vercel/
+node_modules/
+.env
+.env.*
+!.env.example
+assets/hero-original.png
+
+.vercel
+.env*
