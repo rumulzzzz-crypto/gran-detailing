@@ -1,7 +1,8 @@
 {
   "framework": null,
-  "buildCommand": "",
-  "outputDirectory": ".",
+  "buildCommand": "node build.mjs",
+  "installCommand": "",
+  "outputDirectory": "dist",
   "headers": [
     { "source": "/(.*)", "headers": [
       { "key": "X-Content-Type-Options", "value": "nosniff" },
